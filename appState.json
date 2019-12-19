@@ -1,0 +1,154 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "7f0163c5-3c2c-4ab4-a834-406ca51189db": {
+        "id": "7f0163c5-3c2c-4ab4-a834-406ca51189db",
+        "parent": null,
+        "name": "Test766",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "691b54e0-fc95-4afb-b107-5704178992ce"
+        ],
+        "isRemovable": false,
+        "filePath": "Test766"
+      },
+      "691b54e0-fc95-4afb-b107-5704178992ce": {
+        "id": "691b54e0-fc95-4afb-b107-5704178992ce",
+        "parent": "7f0163c5-3c2c-4ab4-a834-406ca51189db",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Test766/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPInewchangeget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "7f0163c5-3c2c-4ab4-a834-406ca51189db",
+    "openFiles": [
+      "691b54e0-fc95-4afb-b107-5704178992ce"
+    ],
+    "currentFileId": "691b54e0-fc95-4afb-b107-5704178992ce",
+    "resources": {
+      "apigusEast1TestAPInewchangeget": {
+        "name": "apigusEast1TestAPInewchangeget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/newchange",
+          "resourceName": "newchange",
+          "resourceId": "q1ox7l",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "m46hgc",
+          "mode": 1
+        }
+      },
+      "ddbShop": {
+        "name": "ddbShop",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "operation": "get",
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:318300609668:table/Shop",
+            "name": "Shop",
+            "partitionKey": "Color",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1
+          },
+          "isGlobalEditMode": false,
+          "parameters": {
+            "Key": {
+              "Color": "1234"
+            },
+            "Item": {},
+            "ExpressionAttributeValues": {}
+          },
+          "triggerParams": {},
+          "validator": {
+            "validatableFields": {},
+            "validity": true
+          },
+          "valid": true
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "javascript",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "Test766",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1576731103979
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "Test766",
+      "url": "https://github.com/zgma-test/Test766"
+    }
+  }
+}
